@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/img_nguoidung"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="58dp"
+        android:onClick="viewNguoiDung"
+        android:layout_marginEnd="49dp"
+        android:layout_marginRight="49dp"
+        app:layout_constraintEnd_toStartOf="@+id/img_theLoai"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/emone" />
+
+    <ImageView
+        android:id="@+id/imgSach"
+        android:layout_width="155dp"
+        android:layout_height="129dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:onClick="viewSach"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginRight="38dp"
+        app:layout_constraintEnd_toStartOf="@+id/img_hoaDon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_nguoidung"
+        app:srcCompat="@drawable/bookicon" />
+
+    <ImageView
+        android:id="@+id/img_theLoai"
+        android:layout_width="167dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="58dp"
+        android:onClick="viewTheLoai"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/img_nguoidung"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cateicon" />
+
+    <ImageView
+        android:id="@+id/img_hoaDon"
+        android:layout_width="156dp"
+        android:layout_height="122dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="30dp"
+        android:onClick="viewHoaDon"
+        android:layout_marginRight="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgSach"
+        app:layout_constraintTop_toBottomOf="@+id/img_theLoai"
+        app:srcCompat="@drawable/hdicon" />
+
+    <ImageView
+        android:id="@+id/img_sachbanchay"
+        android:layout_width="158dp"
+        android:layout_height="152dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:onClick="viewsachBanChay"
+        android:layout_marginTop="73dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginRight="39dp"
+        app:layout_constraintEnd_toStartOf="@+id/img_thongke"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgSach"
+        app:srcCompat="@drawable/money_icon" />
+
+    <ImageView
+        android:id="@+id/img_thongke"
+        android:layout_width="152dp"
+        android:layout_height="141dp"
+        android:layout_marginTop="80dp"
+        android:onClick="viewThongKe"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/img_sachbanchay"
+        app:layout_constraintTop_toBottomOf="@+id/img_hoaDon"
+        app:srcCompat="@drawable/thongke" />
+</androidx.constraintlayout.widget.ConstraintLayout>

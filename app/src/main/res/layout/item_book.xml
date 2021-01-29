@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="45dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginRight="54dp"
+        app:layout_constraintEnd_toStartOf="@+id/ed_adapterMaSach"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bookicon" />
+
+    <EditText
+        android:id="@+id/ed_adapterMaSach"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Tên sách"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toStartOf="@+id/img_adapterDeleteSach"
+        app:layout_constraintStart_toEndOf="@+id/imageView16"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_adapterDeleteSach"
+        android:layout_width="49dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ed_adapterMaSach"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_close" />
+<!--    <TextView-->
+<!--        android:id="@+id/txtBookPrice"-->
+<!--        android:layout_width="185dp"-->
+<!--        android:layout_height="36dp"-->
+<!--        android:layout_marginTop="11dp"-->
+<!--        android:text="TextView"-->
+<!--        app:layout_constraintEnd_toStartOf="@+id/ivDelete"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/ivIcon"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/txtBookName" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/ivIcon"-->
+<!--        android:layout_width="98dp"-->
+<!--        android:layout_height="83dp"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:layout_marginLeft="16dp"-->
+<!--        android:layout_marginTop="31dp"-->
+<!--        android:layout_marginEnd="21dp"-->
+<!--        android:layout_marginRight="21dp"-->
+<!--        app:layout_constraintEnd_toStartOf="@+id/txtBookPrice"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:srcCompat="@drawable/bookicon" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/txtBookName"-->
+<!--        android:layout_width="185dp"-->
+<!--        android:layout_height="36dp"-->
+<!--        android:layout_marginStart="21dp"-->
+<!--        android:layout_marginLeft="21dp"-->
+<!--        android:layout_marginTop="31dp"-->
+<!--        android:text="TextView"-->
+<!--        app:layout_constraintEnd_toStartOf="@+id/ivDelete"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/ivIcon"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/ivDelete"-->
+<!--        android:layout_width="79dp"-->
+<!--        android:layout_height="56dp"-->
+<!--        android:layout_marginTop="31dp"-->
+<!--        android:layout_marginEnd="12dp"-->
+<!--        android:layout_marginRight="12dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/txtBookPrice"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:srcCompat="@drawable/ic_close" />-->
+</androidx.constraintlayout.widget.ConstraintLayout>

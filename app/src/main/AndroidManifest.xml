@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.da">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DA">
+        <activity android:name=".bookmanager.TheLoaiActivity"></activity>
+        <activity android:name=".bookmanager.ThongKeDoanhThuActivity" />
+        <activity android:name=".bookmanager.LuotSachBanChayActivity" />
+        <activity android:name=".list.ListHoaDonChiTietByIDActivity" />
+        <activity android:name=".bookmanager.HoaDonChiTietActivity" />
+        <activity android:name=".bookmanager.HoaDonActivity" />
+        <activity android:name=".list.ListHoaDonActivity" />
+        <activity android:name=".list.ListBookActivity" />
+        <activity android:name=".bookmanager.ThemSachActivity" />
+        <activity android:name=".list.ListTheLoaiActivity" />
+        <activity android:name=".bookmanager.NguoiDungDetailActivity" />
+        <activity android:name=".bookmanager.NguoiDungActivity" />
+        <activity android:name=".list.ListNguoiDungActivity" />
+        <activity android:name=".ChangePasswordActivity" />
+        <activity android:name=".Login" />
+        <activity android:name=".ManHinhChao" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity">
+
+        </activity>
+    </application>
+
+</manifest>
